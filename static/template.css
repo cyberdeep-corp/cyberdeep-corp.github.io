@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+}
+
+.Header {
+    position: relative;
+    background: rgb(13, 139, 13);
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 5px;
+}
+
+.Header .Logo {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.Header .navigate{
+    position: absolute;
+    left: 25%;
+    bottom: 32.5%;
+}
+
+.Header .navigate a {
+    padding-left: 12px;
+    padding-right: 12px;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+.content {
+    flex: 1; /* Take up remaining space */
+}
+
+.Footer {
+    background: lightgrey;
+    padding: 1rem; /* Adjust padding as needed */
+    text-align: center; /* Center text horizontally */
+}
+
+.footer-content a {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline */
+    margin: 0 5px; /* Add some spacing between links */
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height to center the content */
+}
+
+.card .card-body {
+    display: grid;
+    place-items: center;
+    padding: 2.25rem;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 12px;
+    box-shadow: 2px 3px 10px 1px rgba(0, 0, 0, 0.75);
+    background: linear-gradient();
+}
+
+.card .card-body input {
+    margin: 12px;
+}
+
+.card .card-body input::placeholder {
+    text-align: center;
+    color: gray; /* Adjust color as needed */
+}
