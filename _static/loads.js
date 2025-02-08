@@ -34,7 +34,7 @@ export function load_json(filename) {
 export function load_css(filename) {
     let loadaddr = document.getElementsByClassName("style")
 
-    fetch(`/static/site/${filename}.css`)
+    fetch(`/_static/site/${filename}.css`)
     .then(res => {
         if (res.ok) {
             return res.text();
@@ -48,7 +48,7 @@ export function load_css(filename) {
 export function load_js(filename) {
     let loadaddr = document.getElementsByTagName("script")
 
-    fetch(`/static/site/${filename}.js`)
+    fetch(`/_static/site/${filename}.js`)
     .then(res => {
         if (res.ok) {
             return res.text();
