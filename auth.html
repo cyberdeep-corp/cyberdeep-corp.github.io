@@ -67,7 +67,7 @@
 <body>
     <div class="container" id="container">
         <h2>Sign In</h2>
-        <form id="signin-form" action="https://samriddha4411.github.io/api/v1/database/cyberdeep/signin-up" method="POST">
+        <form id="signin-form" action="https://database-jxjm.vercel.app/auth" method="POST">
             <input type="email" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Password" required>
             <button type="submit">Sign In</button>
@@ -86,7 +86,7 @@
             const isSignIn = container.querySelector('h2').textContent === 'Sign In';
             container.querySelector('h2').textContent = isSignIn ? 'Sign Up' : 'Sign In';
             container.querySelector('form').id = isSignIn ? 'signup-form' : 'signin-form';
-            container.querySelector('form').action = 'https://samriddha4411.github.io/api/v1/database/cyberdeep/signin-up';
+            container.querySelector('form').action = 'https://database-jxjm.vercel.app/auth';
             container.querySelector('form').innerHTML = isSignIn ? `
                 <input type="text" name="username" placeholder="Username" required>
                 <input type="email" name="email" placeholder="Email" required>
@@ -106,7 +106,7 @@
         function forgotPassword() {
             alert('Redirecting to forgot password page.');
             // Redirect to forgot password page
-            window.location.href = 'https://samriddha4411.github.io/api/v1/database/cyberdeep/forgot-password';
+            window.location.href = 'https://database-jxjm.vercel.app/forgot-password';
         }
     </script>
 </body>
