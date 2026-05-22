@@ -34,105 +34,23 @@ nav a:hover{
     align-items:center;
     justify-content:center;
     text-align:center;
-    padding:120px 10%;
+    padding:100px 10%;
     background:
-    radial-gradient(circle at center,
-    rgba(0,217,255,.06),
-    transparent 45%),
-    #050816;
-}
-
-.hero-badge{
-    display:inline-block;
-    padding:8px 18px;
-    border-radius:25px;
-    background:rgba(0,217,255,.08);
-    color:var(--accent);
-    border:1px solid rgba(0,217,255,.18);
-    margin-bottom:25px;
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1500&q=80')
+    center/cover;
 }
 
 .hero-content h1{
-    font-size:4.6rem;
-    font-weight:700;
-    margin-bottom:20px;
-    line-height:1.1;
+    font-size:4rem;
+    margin-bottom:15px;
 }
 
 .hero-content p{
-    max-width:760px;
-    margin:auto;
-    color:#c7c7c7;
-    font-size:1.15rem;
-    line-height:1.8;
-}
-
-.software-panel{
-    display:flex;
-    justify-content:center;
-}
-
-.software-card{
-    width:100%;
-    max-width:1100px;
-    background:rgba(255,255,255,.03);
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:28px;
-    padding:45px;
-    text-align:center;
-    backdrop-filter:blur(10px);
-}
-
-.software-label{
-    display:inline-block;
-    padding:8px 18px;
-    border-radius:25px;
-    background:rgba(0,217,255,.08);
-    color:var(--accent);
-    margin-bottom:20px;
-}
-
-.software-card h2{
-    font-size:3rem;
-    margin-bottom:20px;
-}
-
-.software-card p{
-    color:#c5c5c5;
+    font-size:1.1rem;
+    color:var(--muted);
     max-width:700px;
     margin:auto;
-    line-height:1.8;
-}
-
-.software-services{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-    margin:40px 0;
-}
-
-.software-services div{
-    background:rgba(255,255,255,.03);
-    border:1px solid rgba(255,255,255,.08);
-    padding:25px;
-    border-radius:20px;
-    transition:.3s;
-}
-
-.software-services div:hover{
-    border-color:var(--accent);
-    transform:translateY(-5px);
-}
-
-@media(max-width:900px){
-
-    .hero-content h1{
-        font-size:3rem;
-    }
-
-    .software-services{
-        grid-template-columns:1fr 1fr;
-    }
 }
 
 .buttons{
