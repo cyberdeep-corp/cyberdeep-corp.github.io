@@ -1,0 +1,39 @@
+/* ===== RESET ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===== ROOT ===== */
+
+:root{
+    --bg:#070b14;
+    --card-bg:rgba(255,255,255,.05);
+    --accent:#00d9ff;
+    --text:#ffffff;
+    --muted:#cccccc;
+    --glass:blur(10px);
+}
+
+/* ===== GLOBAL ===== */
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    overflow-x:hidden;
+    font-family:'Poppins',sans-serif;
+}
+
+a{
+    text-decoration:none;
+}
+
+section{
+    padding:90px 10%;
+}

@@ -5,169 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CyberDeep Corporate</title>
 
+<link rel="icon" type="image/jpeg" href="corporate.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
-
-body{
-    background:#070b14;
-    color:white;
-    overflow-x:hidden;
-}
-
-header{
-    position:fixed;
-    width:100%;
-    top:0;
-    left:0;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 10%;
-    background:rgba(0,0,0,.5);
-    backdrop-filter:blur(10px);
-    z-index:1000;
-}
-
-.logo{
-    font-size:1.6rem;
-    font-weight:700;
-    color:#00d9ff;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:25px;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#00d9ff;
-}
-
-.hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:100px 10%;
-    background:
-    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)),
-    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1500&q=80')
-    center/cover;
-}
-
-.hero-content h1{
-    font-size:4rem;
-    margin-bottom:15px;
-}
-
-.hero-content p{
-    font-size:1.1rem;
-    color:#ccc;
-    max-width:700px;
-    margin:auto;
-}
-
-.buttons{
-    margin-top:30px;
-}
-
-.btn{
-    display:inline-block;
-    padding:14px 28px;
-    margin:10px;
-    border-radius:30px;
-    text-decoration:none;
-    transition:.3s;
-}
-
-.primary{
-    background:#00d9ff;
-    color:black;
-}
-
-.secondary{
-    border:1px solid #00d9ff;
-    color:#00d9ff;
-}
-
-.btn:hover{
-    transform:translateY(-3px);
-}
-
-section{
-    padding:90px 10%;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:50px;
-    font-size:2rem;
-    color:#00d9ff;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:rgba(255,255,255,.05);
-    border:1px solid rgba(255,255,255,.1);
-    padding:30px;
-    border-radius:20px;
-    transition:.3s;
-    backdrop-filter:blur(10px);
-}
-
-.card:hover{
-    transform:translateY(-10px);
-    border-color:#00d9ff;
-}
-
-.stats{
-    display:flex;
-    justify-content:space-around;
-    flex-wrap:wrap;
-    text-align:center;
-}
-
-.stat{
-    margin:20px;
-}
-
-.stat h2{
-    color:#00d9ff;
-    font-size:2.5rem;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    background:#03050a;
-    color:#888;
-}
-</style>
+<!-- CSS -->
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
 
 <header>
     <div class="logo">CyberDeep</div>
+
     <nav>
         <a href="#about">About</a>
         <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
+        <a href="#software">Software</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
@@ -175,89 +33,65 @@ footer{
 <section class="hero">
     <div class="hero-content">
         <h1>CyberDeep Corporate</h1>
+
         <p>
             Delivering next-generation cybersecurity,
-            ethical hacking, software engineering,
-            and enterprise technology solutions.
+            software engineering and enterprise solutions.
         </p>
 
         <div class="buttons">
-            <a href="#services" class="btn primary">Explore Services</a>
-            <a href="#contact" class="btn secondary">Get Started</a>
+            <a href="#services" class="btn primary">
+                Explore Services
+            </a>
+
+            <a href="#software" class="btn secondary">
+                SamWorks Studios
+            </a>
         </div>
     </div>
 </section>
 
-<section id="about">
-    <h2 class="section-title">About Us</h2>
-    <div class="card">
-        <p>
-            CyberDeep Corporate is dedicated to innovation,
-            cybersecurity excellence, secure infrastructure,
-            and enterprise-grade software development.
-        </p>
-    </div>
-</section>
-
-<section id="services">
-    <h2 class="section-title">Corporate Services</h2>
+<section id="software">
+    <h2 class="section-title">
+        Software Division
+    </h2>
 
     <div class="cards">
-        <div class="card">
-            <h3>Cybersecurity</h3>
-            <p>Advanced security solutions and monitoring.</p>
-        </div>
 
         <div class="card">
-            <h3>Ethical Hacking</h3>
-            <p>Penetration testing and vulnerability assessment.</p>
+            <h3>SamWorks Studios</h3>
+
+            <p>
+                SamWorks Studios is the software
+                innovation division of CyberDeep,
+                focused on applications, secure
+                systems and intelligent tools.
+            </p>
+
+            <br>
+
+            <p>
+                Status:
+                <span class="active-status">
+                    Active Development
+                </span>
+            </p>
+
+            <br>
+
+            <a
+                href="https://samworks.cyberdeep.qzz.io"
+                target="_blank"
+                class="btn primary">
+                Open SamWorks Studio
+            </a>
         </div>
 
-        <div class="card">
-            <h3>Fullstack Development</h3>
-            <p>Scalable web and enterprise applications.</p>
-        </div>
-
-        <div class="card">
-            <h3>Consulting</h3>
-            <p>Strategic technology and infrastructure guidance.</p>
-        </div>
-    </div>
-</section>
-
-<section id="portfolio">
-    <h2 class="section-title">Portfolio & Achievements</h2>
-
-    <div class="stats">
-        <div class="stat">
-            <h2>120+</h2>
-            <p>Projects</p>
-        </div>
-
-        <div class="stat">
-            <h2>80+</h2>
-            <p>Clients</p>
-        </div>
-
-        <div class="stat">
-            <h2>24/7</h2>
-            <p>Support</p>
-        </div>
-    </div>
-</section>
-
-<section id="contact">
-    <h2 class="section-title">Contact</h2>
-
-    <div class="card">
-        <p>Email: contact@cyberdeep.com</p>
-        <p>Phone: +91 XXXXX XXXXX</p>
-        <p>Location: India</p>
     </div>
 </section>
 
 <footer>
-    © 2026 CyberDeep Corporate. All Rights Reserved.
+    © 2026 CyberDeep Corporate
 </footer>
 
 </body>
