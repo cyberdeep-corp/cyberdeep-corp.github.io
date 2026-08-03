@@ -1,119 +1,237 @@
-header{
-    position:fixed;
-    width:100%;
-    top:0;
-    left:0;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 10%;
-    background:rgba(0,0,0,.5);
-    backdrop-filter:blur(10px);
-    z-index:1000;
+:root {
+    --bg: #050b16;
+    --surface: rgba(255, 255, 255, 0.08);
+    --surface-strong: #0f1b2d;
+    --text: #f5f7fc;
+    --muted: #9aa8bf;
+    --accent: #60d9ff;
+    --accent-strong: #2f7dff;
+    --border: rgba(255, 255, 255, 0.12);
 }
 
-.logo{
-    font-size:1.6rem;
-    font-weight:700;
-    color:var(--accent);
+.hero {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 5rem 0 3rem;
+    min-height: 90vh;
 }
 
-nav a{
-    color:white;
-    margin-left:25px;
-    transition:.3s;
+.hero-copy h1 {
+    font-size: clamp(2.2rem, 4vw, 3.7rem);
+    margin-bottom: 1rem;
 }
 
-nav a:hover{
-    color:var(--accent);
+.hero-copy p {
+    font-size: 1.02rem;
+    color: var(--muted);
+    max-width: 620px;
 }
 
-.hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:100px 10%;
-    background:
-    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)),
-    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1500&q=80')
-    center/cover;
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0 1.2rem;
 }
 
-.hero-content h1{
-    font-size:4rem;
-    margin-bottom:15px;
+.hero-points {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    color: var(--muted);
+    list-style: none;
+    padding: 0;
 }
 
-.hero-content p{
-    font-size:1.1rem;
-    color:var(--muted);
-    max-width:700px;
-    margin:auto;
+.hero-points li::before {
+    content: '•';
+    color: var(--accent);
+    margin-right: 0.45rem;
 }
 
-.buttons{
-    margin-top:30px;
+.hero-card, .service-card, .insight-card, .contact-card, .form-card, .stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    box-shadow: var(--shadow);
 }
 
-.btn{
-    display:inline-block;
-    padding:14px 28px;
-    margin:10px;
-    border-radius:30px;
-    transition:.3s;
+.hero-card {
+    overflow: hidden;
 }
 
-.primary{
-    background:var(--accent);
-    color:black;
+.hero-card img {
+    height: 320px;
 }
 
-.secondary{
-    border:1px solid var(--accent);
-    color:var(--accent);
+.hero-card-body {
+    padding: 1.2rem 1.3rem 1.4rem;
 }
 
-.btn:hover{
-    transform:translateY(-3px);
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: -1rem;
 }
 
-.section-title{
-    text-align:center;
-    margin-bottom:50px;
-    font-size:2rem;
-    color:var(--accent);
+.stat-card {
+    padding: 1.25rem;
+    text-align: center;
 }
 
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+.stat-card strong {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--accent);
 }
 
-.card{
-    background:var(--card-bg);
-    border:1px solid rgba(255,255,255,.1);
-    padding:30px;
-    border-radius:20px;
-    transition:.3s;
-    backdrop-filter:var(--glass);
+.section-heading {
+    max-width: 720px;
+    margin-bottom: 2rem;
 }
 
-.card:hover{
-    transform:translateY(-10px);
-    border-color:var(--accent);
+.section-heading h2, .split-content h2, .page-hero h1, .contact-hero h1 {
+    font-size: clamp(1.7rem, 2.4vw, 2.35rem);
+    margin-bottom: 0.8rem;
 }
 
-.active-status{
-    color:#00ff88;
-    font-weight:600;
+.card-grid, .insight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
 }
 
-footer{
-    text-align:center;
-    padding:30px;
-    background:#03050a;
-    color:#888;
+.service-card, .insight-card, .contact-card, .form-card {
+    padding: 1.4rem;
+}
+
+.service-card h3, .insight-card h3, .contact-card h3 {
+    margin-bottom: 0.6rem;
+}
+
+.service-card a {
+    color: var(--accent);
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 0.7rem;
+}
+
+.split-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.split-content p, .page-hero p, .contact-hero p {
+    color: var(--muted);
+}
+
+.check-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.check-list li {
+    margin-bottom: 0.7rem;
+    color: var(--text);
+}
+
+.check-list li::before {
+    content: '✓';
+    color: var(--accent);
+    margin-right: 0.5rem;
+}
+
+.image-panel img {
+    border-radius: 24px;
+    height: 360px;
+}
+
+.cta-band {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.6rem 1.8rem;
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    background: linear-gradient(135deg, rgba(96, 217, 255, 0.16), rgba(47, 125, 255, 0.12));
+}
+
+.page-shell {
+    padding-top: 2rem;
+}
+
+.page-hero {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem 0 2.5rem;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 1rem;
+}
+
+.contact-list {
+    display: grid;
+    gap: 1rem;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+label {
+    display: grid;
+    gap: 0.45rem;
+    font-weight: 500;
+}
+
+input, textarea {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 0.85rem 1rem;
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text);
+}
+
+input:focus, textarea:focus {
+    outline: 1px solid var(--accent);
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .hero, .page-hero, .split-section, .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .card-grid, .insight-grid, .stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding-top: 3rem;
+    }
+
+    .cta-band {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
