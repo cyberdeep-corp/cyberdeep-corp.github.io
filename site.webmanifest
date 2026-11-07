@@ -1,0 +1,17 @@
+{
+  "name": "CyberDeep Corporate",
+  "short_name": "CyberDeep",
+  "description": "The company behind a growing digital portfolio.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f8fc",
+  "theme_color": "#f4f8fc",
+  "icons": [
+    {
+      "src": "/Logo-Emblem-Icon.png",
+      "sizes": "885x885",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

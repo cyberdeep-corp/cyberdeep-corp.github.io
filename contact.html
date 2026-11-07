@@ -3,89 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with CyberDeep Corporate to discuss strategy, software, or enterprise support.">
+    <meta name="theme-color" content="#f4f8fc">
+    <meta name="description" content="Contact CyberDeep Corporate about its portfolio, SamWorks Studios, or Union Foundation, its legal and documental unit.">
     <meta name="robots" content="index,follow">
     <link rel="canonical" href="https://cyberdeep.qzz.io/contact.html">
     <meta property="og:title" content="Contact CyberDeep Corporate">
-    <meta property="og:description" content="Start a conversation about your next growth initiative.">
+    <meta property="og:description" content="Talk with the company behind SamWorks Studios and the CyberDeep digital portfolio.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://cyberdeep.qzz.io/contact.html">
-    <meta property="og:image" content="https://cyberdeep.qzz.io/corporate.svg">
+    <meta property="og:image" content="https://cyberdeep.qzz.io/Logo-Emblem-NBG.png">
     <title>Contact CyberDeep Corporate</title>
-    <link rel="icon" type="image/svg+xml" href="corporate.svg">
+    <link rel="icon" type="image/png" href="Logo-Emblem-Icon.png">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header class="site-header">
-        <div class="container nav-bar">
-            <a class="brand" href="index.html">
-                <img src="corporate.svg" alt="CyberDeep Corporate logo">
-                <span>CyberDeep Corporate</span>
-            </a>
-            <nav class="site-nav">
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="index.html#solutions">Solutions</a>
-                <a href="contact.html">Contact</a>
+        <div class="shell site-nav">
+            <a class="brand" href="index.html" aria-label="CyberDeep Corporate home"><span class="brand-mark"><img src="Logo-Emblem-NBG.png" alt="CyberDeep Corporate"></span></a>
+            <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation"><span></span><span></span></button>
+            <nav class="nav-menu" id="primary-navigation" aria-label="Main navigation">
+                <a href="index.html#portfolio">Portfolio</a><a href="about.html">Company</a><a href="services.html">How we work</a><a class="nav-contact" href="contact.html" aria-current="page">Contact <span aria-hidden="true">↗</span></a>
             </nav>
         </div>
     </header>
-
-    <main class="container page-shell">
-        <section class="page-hero contact-hero">
-            <div>
-                <p class="eyebrow">Contact us</p>
-                <h1>Let’s discuss your next phase of growth.</h1>
-                <p>Share your goals and we’ll help you shape the right strategy, platform, or operational support plan.</p>
-            </div>
-        </section>
-
-        <section class="contact-layout">
-            <div class="contact-list">
-                <article class="contact-card">
-                    <h3>Consultation</h3>
-                    <p>Book a discovery call to explore software, compliance, and growth requirements.</p>
-                </article>
-                <article class="contact-card">
-                    <h3>Response time</h3>
-                    <p>We usually respond within one business day with next-step guidance.</p>
-                </article>
-                <article class="contact-card">
-                    <h3>Location</h3>
-                    <p>Remote-first support with global collaboration capabilities.</p>
-                </article>
-            </div>
-
-            <div class="form-card">
-                <form>
-                    <label>
-                        <span>Name</span>
-                        <input type="text" placeholder="Your name">
-                    </label>
-                    <label>
-                        <span>Email</span>
-                        <input type="email" placeholder="you@example.com">
-                    </label>
-                    <label>
-                        <span>Project focus</span>
-                        <input type="text" placeholder="Software, advisory, operations...">
-                    </label>
-                    <label>
-                        <span>Tell us more</span>
-                        <textarea rows="5" placeholder="Share your goals and timeline."></textarea>
-                    </label>
-                    <button type="submit" class="btn primary">Send inquiry</button>
-                </form>
-            </div>
+    <main>
+        <section class="page-intro"><div class="shell">
+            <p class="eyebrow">Contact / Company & portfolio</p>
+            <h1>Tell us what you’re looking to build or grow.</h1>
+            <p>For company, portfolio, or digital product inquiries, a few details are enough to start. Your message opens in your email app so you can review it before sending.</p>
+        </div></section>
+        <section class="page-section shell contact-layout">
+            <aside class="contact-details">
+                <p class="section-index">01 / Reach the company</p>
+                <h2>One connected portfolio. A direct line to the studio.</h2>
+                <p>CyberDeep Corporate inquiries are routed to SamWorks Studios, the software and product studio within the portfolio.</p>
+                <div class="contact-method"><span>Portfolio studio</span><a href="https://samworks.cyberdeep.qzz.io/">SamWorks Studios ↗</a></div>
+                <div class="contact-method"><span>Email</span><a href="mailto:studio@cyberdeep.qzz.io">studio@cyberdeep.qzz.io</a></div>
+                <p class="form-disclaimer">Please do not include passwords, access tokens, or sensitive personal information in your first message.</p>
+            </aside>
+            <form class="contact-form" data-contact-form data-recipient="studio@cyberdeep.qzz.io">
+                <div class="form-field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
+                <div class="form-field"><label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+                <div class="form-field"><label for="organization">Organization <span>(optional)</span></label><input id="organization" name="organization" autocomplete="organization"></div>
+                <div class="form-field"><label for="topic">What is this about?</label><select id="topic" name="topic" required><option value="" disabled selected>Select a focus</option><option>CyberDeep Corporate</option><option>SamWorks Studios</option><option>Union Foundation - legal and documental</option><option>Partnership or collaboration</option><option>Something else</option></select></div>
+                <div class="form-field full"><label for="message">A little more about it</label><textarea id="message" name="message" placeholder="What are you building, improving, or asking about?" required></textarea></div>
+                <div class="form-field full"><button class="button button-primary" type="submit">Prepare email <span aria-hidden="true">↗</span></button></div>
+                <p class="form-disclaimer form-field full">This static website does not store or transmit your form data. Submitting opens your email app with a draft addressed to the studio.</p>
+                <p class="form-feedback form-field full" aria-live="polite"></p>
+            </form>
         </section>
     </main>
-
-    <footer class="footer container">
-        <p>© 2026 CyberDeep Corporate. Let’s build something lasting.</p>
-    </footer>
+    <footer class="site-footer"><div class="shell">
+        <div class="footer-main"><div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark"><img src="Logo-Emblem-NBG.png" alt="CyberDeep Corporate"></span></a><p>Independent ventures, connected by a thoughtful corporate foundation.</p></div><div class="footer-column"><h2>Company</h2><a href="about.html">About CyberDeep</a><a href="services.html">How we work</a><a href="index.html#portfolio">Portfolio</a></div><div class="footer-column"><h2>Portfolio</h2><a href="https://samworks.cyberdeep.qzz.io/">SamWorks Studios ↗</a><a href="https://union.cyberdeep.qzz.io/">Union Foundation ↗</a></div></div>
+        <div class="footer-bottom"><span>© 2026 CyberDeep Corporate</span><span>OWNED WITH INTENTION / BUILT TO LAST</span></div>
+    </div></footer>
+    <script src="js/site.js" defer></script>
 </body>
 </html>
